@@ -19,8 +19,19 @@ The initial password can be changed in [`docker-compose.yml`](docker-compose.yml
 
 
 To make sure OMERO stores all the data on a different storage volume instead of writing to the server storage itself:
-chmod ug=rwx path_to_external_storage
-This will give the owner or the user read/write/executable permissions!
+
+    chmod ug=rwx path_to_external_storage
+    
+This will give the owner or the user read/write/executable permissions to the this folder.
+Change the docker-compose.yml file
+at
+https://github.com/pr4deepr/docker-example-omero/blob/bd71124a6b3d5ddb932a2e6b7d37e821d642e6ba/docker-compose.yml#L29
+
+to:
+
+    volumes:
+    - "path_to_external_storage:/OMERO"
+        
 
 See here for more details on enabling figure export and changing location of storage
 https://github.com/ome/docker-example-omero/issues/6
