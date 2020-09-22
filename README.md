@@ -1,4 +1,4 @@
-# OMERO.server and OMERO.web (docker-compose)
+# OMERO.server and OMERO.web (docker-compose) with figure export
 
 Example of running OMERO.server and OMERO.web in Docker.
 
