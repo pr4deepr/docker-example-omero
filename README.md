@@ -3,7 +3,7 @@
 Example of running OMERO.server and OMERO.web in Docker.
 
 This configuration will enable the export figure option by following instructions at: 
-https://github.com/ome/omero-figure#enabling-figure-export
+https://github.com/ome/omero-figure#enabling-figure-export **(Option 2)**
 
 
 OMERO.server is listening on the standard OMERO ports `4063` and `4064`.
